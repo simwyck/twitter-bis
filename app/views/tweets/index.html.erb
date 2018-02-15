@@ -1,0 +1,23 @@
+<h1>All Tweets</h1>
+
+<% if !@tweets.any? %>
+  <p>No tweet to display, man. You need to <%= link_to "add your own", new_tweet_path %> NOW!</p>
+<% else %>
+  <table>
+    <thead>
+      <tr>
+        <th>Content</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @tweets.each do |tweet| %>
+        <tr>
+          <td><%= tweet.tweet_text %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<p><a href="<%= new_tweet_path %>">Try tweeting yourself</a></p>

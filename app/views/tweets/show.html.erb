@@ -1,0 +1,7 @@
+<h1>Your Tweet</h1>
+
+<p>Created on: <%= @tweet.created_at.strftime("%d/%m/%Y at %H:%M") %></p>
+
+<p>Content: <%= @tweet.tweet_text %></p>
+
+<p><a href="<%= tweets_path %>" class="btn btn-default">Back To More Gossips</a></p>

@@ -1,0 +1,19 @@
+<h1>Send A Tweet</h1>
+
+<%= form_for @tweet do |f| %>
+
+  <div class="form-group">
+
+    <label>Tweet Content</label>
+
+    <%= f.text_area :tweet_text, class: 'form-control' %>
+
+  </div>
+
+  <div class="form-group">
+
+    <button type="submit">Send Tweet</button>
+
+  </div>
+
+<% end %>
