@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'tweets#new'
+  root 'home#index'
 
   get 'home/index'
 
